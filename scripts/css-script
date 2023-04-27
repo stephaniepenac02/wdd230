@@ -1,0 +1,53 @@
+body{
+    margin: auto;
+    width: 35%;
+    background-color: white;
+}
+
+img{
+   
+    background-image: url("/wdd230/img.png");
+    float: left;
+    margin-bottom: -10px;
+}
+h1{
+    
+    border: 1px black;
+    padding: 25px;
+    color: dimgrey;
+    background-color: lightblue;
+    height: 120px;
+    margin-bottom: -10px;
+    text-align: right;
+
+}
+p{
+   
+    padding: -10px;
+   
+
+
+}
+
+
+
+
+h2{
+    text-align: left;
+}
+
+h3{
+    text-align: left; 
+    font-size: 12px;
+}
+
+h4{
+    text-align: center;
+    border: 1px black;
+    padding: 20px;
+    color:dimgrey;
+    background-color: lightblue;
+    height: 40px;
+}
+
+
