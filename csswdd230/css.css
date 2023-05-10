@@ -6,10 +6,11 @@ body{
 
 img{
    
-    background-image: url("/wdd230/img.png");
+    background-image: url("C:\Users\Stephanie\vs-wdd\wdd230\image\210426fb-e4f5-4094-8b33-7062f911a87b.jpeg");
     float: left;
     margin-bottom: -10px;
 }
+
 h1{
     
     border: 1px black;
@@ -21,15 +22,10 @@ h1{
     text-align: right;
 
 }
-p{
-   
+p{ 
     padding: -10px;
    
-
-
 }
-
-
 
 
 h2{
@@ -49,5 +45,3 @@ h4{
     background-color: lightblue;
     height: 40px;
 }
-
-
