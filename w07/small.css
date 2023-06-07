@@ -280,29 +280,7 @@ main picture {
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
-.gallery2{
-	margin: 8px;
-	border: 1px solid;
-	float: left;
-	width: 300px;
-	border: none !important;
-	
-}
 
-.gallery2 img{
-	
-	width: 300px;
-	height: 200px;
-	
-	
-}
-
-.desc{
-	padding: 2px;
-	margin: 8px;
-	font-size: 15px;
-	text-align: center;
-}
 
 /* CONTACT IMAGE  */
 
