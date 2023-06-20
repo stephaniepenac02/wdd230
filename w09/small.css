@@ -290,17 +290,17 @@ main picture {
 
 main {
 	margin: 0 auto;
-	padding: 0.5rem;
+	padding: 0rem;
 	max-width: 700px;
-	background-color: #fff;
+	background-color:rgb(182, 231, 219);
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
 .menu {
 	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 0px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #bed;
+	background-color: rgb(182, 231, 219);
 	text-align: center;
 }
 
@@ -310,9 +310,9 @@ main {
 }
 
 section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 3px solid rgba(117, 117, 117, 0.1);
 	padding: 0.5rem;
-	background-color: #eee;
+	background-color: #ffffff;
 }
 
 .grid {
@@ -327,7 +327,6 @@ section {
 }
 
 .grid img {
-	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
 }
 
@@ -380,12 +379,13 @@ section p {
 section a {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.85rem;
-	color: navy;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
 	letter-spacing: 1.1pt;
 }
 
 img {
-	height: 75px;
+	height: 85px;
 	max-width: 100%; /* Images are jerks - Seattle*/
 }
 
