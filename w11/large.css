@@ -1,0 +1,24 @@
+@media (min-width: 48em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+
+
+    .newtext{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+        color: rgb(78, 149, 190);
+        margin-top: 5;
+    }
+}
+
+.b1 {
+
+	text-align: center;
+    font-size: 1.5em;
+	margin: 30px;
+}
+

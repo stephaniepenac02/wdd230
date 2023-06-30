@@ -1,0 +1,202 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+header, footer{
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+
+.logox {
+  border-radius: 50%; 
+  align-items: left;
+
+}
+
+
+
+.newtext{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+}
+
+.titlem{
+	padding-top: 0.2px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #000000;
+	color: #afc5a1;
+}
+
+.b1 {
+
+	text-align: center;
+    font-size: 1em;
+	margin: 30px;
+}
+
+header,
+nav, 
+footer{
+	
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	padding: .5rem;
+	color: #536878;
+}
+
+p {
+	padding: .5rem;
+}
+
+nav{
+	background-color: #22282c;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: column;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #708080;
+	color: yellow;
+}
+
+footer{
+	background-color: #22282c;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: column;
+	font-size: 10px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background: rgb(236, 149, 163);
+    display: flex;
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: rgb(158, 156, 156);
+    border: rgb(236, 149, 163) ;
+    color: black;
+}
+
+.container p{
+    margin-bottom: 40px;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.topnav {
+	overflow: hidden;
+	background-color: #afc5a1;
+  }
+  
+  .topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  .topnav a:hover {
+	background-color: #a7a5a0;
+	color: black;
+  }
+  
+  .topnav a.active {
+	background-color: #000000;
+	color: white;
+  }
+  
+
+  .topnav input[type=text] {
+	float: right;
+	padding: 6px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+  }
+  
