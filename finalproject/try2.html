@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>Responsive Website Landing Page - With Background Image Slider | Space</title>
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="try2.js">
+    <link rel="stylesheet" href="bountiful.json">
+    <link rel="try2">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">Bountiful Foods</a>
+        <div class="menu-btn">
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="index.html" >Home</a>
+                    <a href="fresh.html" >Fresh</a>
+                    <a href="aboutus.html" >About Us</a>
+                    <a href="try.html" >try</a>
+                </div>
+            </div>
+        </div>
+    </header>
+ <div class="home2">
+        <img src="images/page2.jpg" width="100%">
+           </div>
+
+
+
+           <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" placeholder="Your first name...">
+                        </div>
+                        <div>
+                            <label for="empCode">E mail</label>
+                            <input type="text" name="empCode" id="empCode" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label for="number">Number</label>
+                            <input type="text" name="number" id="number" placeholder="+000 000 0000">
+                        </div>
+                        <div>
+
+
+                           
+                            <label for="fruit">Fruit</label>
+                            <select id="fruit1" name="fruit1">
+                                <option value="apple">Apple</option><option value="Apricot">Apricot</option> <option value="apple">Avocado</option>
+                                <option value="Banana">Banana</option><option value="Blackberry">Blackberry</option> <option value="apple">Blueberry</option>
+                                <option value="Cherry">Cherry</option><option value="Dragonfruit">Dragonfruit</option> <option value="apple">Durian</option> <option value="apple">Feijoa</option>
+                                <option value="Fig">Fig</option>  <option value="Gooseberry">Gooseberry</option> <option value="apple">Grape</option>
+                                <option value="GreenApple">GreenApple</option><option value="apple">Guava</option> <option value="apple">Kiwi</option> <option value="apple">Kiwifruit</option>
+                                <option value="Lemon">Lemon</option> <option value="apple">Lime</option>  <option value="apple">Lingonberry</option>
+                                <option value="Lychee">Lychee</option><option value="apple">Mango</option><option value="apple">Melon</option><option value="apple">Kiwi</option>
+                                <option value="apple">Lychee</option><option value="apple">Lychee</option><option value="apple">Lychee</option>
+                            </select> 
+                            <h2>Make a drop down list based on JSON data.</h2>
+                            <p id="demo"></p>
+                            
+                            <script>
+                            const dbParam = JSON.stringify({table:"customers",limit:20});
+                            const xmlhttp = new XMLHttpRequest();
+                            xmlhttp.onload = function() {
+                              const myObj = JSON.parse(this.responseText);
+                              let text = "<select>"
+                              for (let x in myObj) {
+                                text += "<option>" + myObj[x].name + "</option>";
+                              }
+                              text += "</select>"
+                              document.getElementById("demo").innerHTML = text;
+                            }
+                            xmlhttp.open("POST", "json_demo_html_table.php");
+                            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                            xmlhttp.send("x=" + dbParam);
+</script>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div id="myData"></div>
+                            
+                            
+                        </div>
+                        <div class="form_action--button">
+                            <input type="button" id="btn1" value="Submit">
+                           <p class="output" id="output1"></p>
+                        </div>
+                    </form>
+            <script>
+                const txt1 = document.getElementById("fname");
+                const btn1 = document.getElementById("btn1");
+                const out1 = document.getElementById("output1");
+                function fun1() {
+                    out1.innerHTML = txt1.value;
+                }
+                btn1.addEventListener("click", funi);
+            </script>
+    
+                </td>
+                <td>
+                    <table class="list" id="fruitlist">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Select fruit</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+
+
+    
+
+
+
+
+        
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    
+    <br>
+    <div class="sitename"></div>
+        <h2>California Chamber of Commerce</h2>
+        <h2>1215 K St #1400, Sacramento, CA 95814, Estados Unidos</h2>
+    
+    <div class="email">
+        <h2>cal_chamber@gov.cou.com</h2>
+    </div>
+    <div class="email">
+        <h2>+593 989 5905</h2>
+    </div>
+
+
+        <div class="location">
+            <a href="https://goo.gl/maps/hvDHLhmBFQpzRPef9"> LOCATION MAP </a>
+                
+
+
+    <span>&copy;<span id="©"></span>
+        <span> |  Stephanie Peña 2023  |</span>
+        <span>WDD 230</span>
+            <div id="current_date"></p>
+                <script>
+                document.getElementById("current_date").innerHTML = Date();
+                </script></div> 
+                </div><br>
+</footer>
+</body>
+</html>
+
