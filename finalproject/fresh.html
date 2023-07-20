@@ -6,13 +6,11 @@
     <meta name="viewport" 
     content="width=device-width, 
     initial-scale=1.0">
-    <title>Responsive Website Landing Page - With Background Image Slider | Space</title>
+    <title>Final Project</title>
     <link rel="stylesheet" href="try.css">
-    <link rel="stylesheet" href="try.js">
+    <link rel="stylesheet" href="main.js">
     <link rel="stylesheet" href="bountiful.json">
-    
-
-    <link rel="try">
+    <link rel="fresh">
 </head>
 <body>
 
@@ -115,40 +113,52 @@
                                             <input type="text" name="instr" id="instr" placeholder="More instructions....... " >
                                         </div>
 
-
-
-
-
                             <div id="myData"></div>   
                         </div>
                         <div class="form_action--button">
-                            <input type="button" id="btn1" value="Submit">
-                           <p class="output" id="output1"></p>
-    
-                        </div>
+                            <button type="button">Submit</button>
+                             </div>
+              
                     </form>
     
+<!------------------------------------------------------------------------------------------------------>
+                    
             <script>
-                const txt1 = document.getElementById("fname");
-                const btn1 = document.getElementById("btn1");
-                const out1 = document.getElementById("output1");
-    
-                function fun1() {
-                    out1.innerHTML = txt1.value;
-                }
-                btn1.addEventListener("click", funi);
+                const form = document.querySelector("form");
+
+                form.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                    const fd = new FormData(form);
+                    const obj = Object.fromEntries(fd);
+
+                    const json = JSON.stringify(obj);
+                    localStorage.setItem("form", json);
+
+                    window.location.href = "fresh.html";
+                })
+
+                const json = localStorage.getItem("form")
+                const obj = JSON.parse(json);
+
+                for (key in obj) {
+                    const markup = `
+                    <div>
+                        <span>${key}: ${obj[key]}</span>
+                        </div>
+                        `;
+                        document.getElementById("fname").innerHTML += markup;  }
+              
             </script>
     
-    
-                </td>
                 <td>
+                    <div id="fname">
                     <table class="list" id="fruitlist">
                         <thead>
                             <tr>
-                                <th>First Name</th>
-                                <th>Email</th>
-                                <th>Phone Number</th>
-                                <th>Select fruit</th>
+                                <th>Get the </th>
+                                <th>most </th>
+                                <th>organic</th>
+                                <th>& tasty</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -157,7 +167,7 @@
                     </table>
                 </td>
             </tr>
-        </table> <br><br>
+        </table> </div><br><br>
 
         <div class="contactusimg">
             <img src="images/frrrr.png" width="100%" height="380px">

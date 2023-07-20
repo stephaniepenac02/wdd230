@@ -21,7 +21,7 @@ header{
 }
 
 header .brand{
-    color: #fff;
+    color: #ffffff !important;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -29,7 +29,7 @@ header .brand{
 }
 
 header .brand:hover{
-    color: #000000;
+    color: #000000 !important;
 }
 
 header .navigation{
@@ -120,7 +120,7 @@ section{
 }
 
 .home .content h1{
-    font-size: 4em;
+    font-size: 3.7em;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -151,7 +151,8 @@ section{
 
 
 .home .content p{
-    margin-bottom: 65px;
+    margin-bottom: 40px;
+    font-size: 1.3em;
 }
 
 .home .content a{
@@ -169,26 +170,25 @@ section{
     color: #fff;
 }
 
-.home .media-icons{
+.media-icons{
     z-index: 888;
-    position: absolute;
+    position: absolute !important;
     right: 30px;
     display: flex;
-    flex-direction: column;
-    transition: 0.5s ease;
+    flex-direction: row;
 }
 
-.home .media-icons a{
-    color: #fff;
+.media-icons a{
+    color: #000000;
     font-size: 1.6em;
     transition: 0.3s ease;
 }
 
-.home .media-icons a:not(:last-child){
+.media-icons a:not(:last-child){
     margin-bottom: 20px;
 }
 
-.home .media-icons a:hover{
+.media-icons a:hover{
     transform: scale(1.3);
     color: #09a6d4;
 }
@@ -249,7 +249,7 @@ section{
 
 .weather{
     align-items: right !important;
-    float: right;
+    float: right !important;
 }
 
 
@@ -258,10 +258,28 @@ section{
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 300px;
+    height: 500px;
+   
     object-fit: cover;
 }
-
+.card {
+    /* Add shadows  */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #ffffff;
+    height: 10px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px ;
+    margin-bottom: 0;
+  }
 
 /*----------------page2-------------------------------------------------*/
 .home2 {
@@ -280,33 +298,30 @@ section{
     z-index: 888;
     color: #fff;
     width: 70%;
-    margin-top: 50px;
+    margin-top: 30px;
     display: none;
     display: block;
 }
 
 .home2 .content2 h1{
-    font-size: 2.1em;
-    font-weight: 500;
+    font-size: 2em;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 5px;
-    line-height: 40px;
-    margin-bottom: 40px;
+    line-height: 45px;
+    margin-bottom: 30px;
 }
 
-
-
-.home2 .content2 h1 span{
-    font-size: 1em;
-    font-weight: 600;
+.home2 img{
+height: 350px;
 }
 
 /*----------------page2-------------------------------------------------*/
+
 body > table{
-    width: 85%;
-    height: 400px;
+    width: 80%;
     margin: 40px auto;
-    background-color: #c3f6ff;
+    background-color: rgb(213, 247, 252);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -324,18 +339,18 @@ td, th{
 }
 
 tr:nth-child(even),table.list thead>tr{
-    background-color:transparent;
+    background-color: transparent;
 }
 input[type="text"], input[type="number"]{
     width: 91%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #3f3f3f;
     border-radius: 4px;
 }
-input[type="button"],input[type="reset"]{
-    background: #9be96e;
+input[type="submit"],input[type="reset"]{
+    background: #eee;
     padding: 6px 12px;
     font-size: 1rem;
     cursor: pointer;
@@ -344,24 +359,28 @@ input[type="button"],input[type="reset"]{
     margin: 15px 0 10px;
     outline: none;
 }
-
+input[type="submit"]:hover{
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
 input[type="reset"]:hover{
     background: linear-gradient(45deg, greenyellow, dodgerblue);
 }
-input[type="button"]:hover{
-    background: linear-gradient(45deg, greenyellow, dodgerblue);
-}
 
+h1{
+    text-align: center;
+    color: #ffffff;
+    margin: 50px;
+}
 
 label{
     text-transform: uppercase;
-    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 input{
-    text-transform: none;
+    text-transform: uppercase;
     font-weight: 200;
-    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
 
@@ -386,31 +405,170 @@ input{
    color: white;
 }
 
-.contausimg{
-    position: relative;
-    justify-content: center;
+p{
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
 }
 
-/*----------------page2-------------------------------------------------*/
+.about1 .row1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #ffc0cb;
+}
+
+.about1 .row1 .image1{
+    flex: 1 1 45rem;
+}
+
+.about1 .row1 .image1 img{
+    width: 100%;
+    height: 440px;
+}
+
+.about1 .row1 .content1{
+    flex: 1 2 1 4rem;
+    padding: 1.5rem;
+
+}
+
+.about1 .row1 .content1 h3{
+    font-size: 1rem;
+    color: #09a6d4;
+}
+
+.about1 .row1 .content1 p{
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center !important;
+}
 
 
+#fruit1, #fruit2, #fruit3 {
+    color: #000000;
+    background-color: #a7a7a7
+}
+/*--------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
+form {
+	margin: 20px;
+}
+/*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
+select {
+	width: 61px;
+	padding: 5.5px;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0, 0.12);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
+	color: #5c616c;
+	color: rgba(0,0,0,0);
+	text-shadow: 0 0 0 #5c616c;
 
+	-webkit-transition: box-shadow 0.6s ease-in-out;
+	-moz-transition: box-shadow 0.6s ease-in-out;
+	-ms-transition: box-shadow 0.6s ease-in-out;
+	-o-transition: box-shadow 0.6s ease-in-out;
+	transition: box-shadow 0.6s ease-in-out;
+}
+@-moz-document url-prefix() {
+	::-moz-focus-inner {border: none}
+	select:-moz-focusring {
+		color: transparent;
+		text-shadow: 0px 0px 0px #5c616c;
+	}
+}
+a, a:visited, a:focus, a:active {
+	text-decoration: none;
+	color: #718e9e;
+	outline: 0;
+}
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 1px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0px;
+	background: transparent;
 
+	-webkit-transition: width 250ms ease-in-out, background-color 250ms ease-in-out;
+	-moz-transition: width 250ms ease-in-out, background-color 250ms ease-in-out;
+	-ms-transition: width 250ms ease-in-out, background-color 250ms ease-in-out;
+	-o-transition: width 250ms ease-in-out, background-color 250ms ease-in-out;
+	transition: width 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: #718e9e;
+	outline: 0;
+}
+select, select:active, select:focus, select:hover {
+	outline: 0;
+}
+select:hover {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+/* Use custom arrow */
+.mdl-selectfield select {
+	-webkit-appearance: none;
+	  -moz-appearance: none;
+			 appearance: none;
+}
+.mdl-selectfield {
+	position: relative;
+}
+.mdl-selectfield:after {
+	position: relative;
+	top: 1em;
+	right: 1em;
+	/* Styling the down arrow */
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: .25em solid transparent;
+	border-right: .25em solid transparent;
+	border-top: 0.375em solid rgba(0,0,0, 0.12);
+	pointer-events: none;
+}
+input {
+	padding: 7px 5.5px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
 
-
-
-
-
-
-
-
-
-
-
-
+	-webkit-transition: box-shadow 0.6s ease-in-out;
+	-moz-transition: box-shadow 0.6s ease-in-out;
+	-ms-transition: box-shadow 0.6s ease-in-out;
+	-o-transition: box-shadow 0.6s ease-in-out;
+	transition: box-shadow 0.6s ease-in-out;
+}
+input:hover {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+label, input, form, select {
+	margin-bottom: 10px;
+}
+h6 {
+	margin-top: 10px;
+}
 
 
 @media (max-width: 1040px){
