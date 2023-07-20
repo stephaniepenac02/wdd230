@@ -571,6 +571,41 @@ h6 {
 }
 
 
+@use postcss-nested;
+
+
+.section1, button {
+	background-color:#444;
+	border:0;
+	border-radius:5px;
+	padding:12px ;
+	color:white;
+	font-size:15px;
+	font-weight:600;
+	text-transform:uppercase;
+	transition:all 0.2s ease;
+    
+}
+
+.section1 {
+    align-items: center;
+	padding:10px 0;
+	
+	& + & {
+		border-top:1px solid #ccc;
+	}
+}
+
+.container1 {
+	width:100px; 
+	max-width:300px;
+	margin:10px;
+	padding:0 15px;
+    align-items: center;
+}
+
+
+
 @media (max-width: 1040px){
     header{
         padding: 12px 20px;
